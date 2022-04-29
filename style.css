@@ -382,7 +382,7 @@ p {
   margin: 18px 0;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 708px) {
   .navbar {
     padding: 1.5rem 8rem;
   }
@@ -438,13 +438,11 @@ p {
     flex-basis: 50%;
   }
 
-  .works__card:nth-child(1),
-  .works__card:nth-child(3) {
+  .works__card:nth-child(odd) {
     flex-direction: row;
   }
 
-  .works__card:nth-child(2),
-  .works__card:nth-child(4) {
+  .works__card:nth-child(even) {
     flex-direction: row-reverse;
   }
 
@@ -452,12 +450,12 @@ p {
     padding: 6rem;
     flex-direction: row;
     -moz-column-gap: 37px;
-    column-gap: 37px;
+    column-gap: 17px;
     border-top-right-radius: 8rem;
   }
 
   .about__myself {
-    flex-basis: 25rem;
+    flex-basis: 32rem;
   }
 
   .about__lang__bottom {
@@ -473,7 +471,7 @@ p {
   }
 
   .about__tools {
-    flex-basis: 25rem;
+    flex-basis: 35rem;
   }
 
   .contact::before {
@@ -513,5 +511,15 @@ p {
 
   .contact__container form li:last-child {
     text-align: center;
+  }
+
+  .btn:hover {
+    color: white;
+    background: #6070ff;
+  }
+
+  .btn:active {
+    background: #2230d2;
+    color: white;
   }
 }
