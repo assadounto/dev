@@ -40,21 +40,23 @@ p {
 
 .p1 {
   font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-color: #344563;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .p2 {
   font-weight: 500;
-color: #6070FF;
+  color: #6070ff;
 }
- .b1 {
+
+.b1 {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #396DF2;
- }
+  color: #396df2;
+}
+
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
@@ -69,15 +71,14 @@ color: #6070FF;
   width: 20px;
   text-decoration: none;
   font-weight: 700;
-font-size: 18px;
-line-height: 20px;
+  font-size: 18px;
 }
 
 .navbar__menu {
   display: none;
   font-weight: 700;
   font-size: 18;
-  line height: 20;
+  line-height: 20px;
 }
 
 .navbar__hamb {
@@ -104,7 +105,6 @@ line-height: 20px;
 .head {
   flex-direction: column;
   background-image: url("./logos/headershape.png");
-
   align-items: flex-start;
   position: relative;
   padding: 6rem 1.5rem;
@@ -115,24 +115,22 @@ line-height: 20px;
   color: #172b4d;
   width: 10ch;
   font-weight: 700;
-font-size: 48px;
-line-height: 60px;
+  font-size: 48px;
+  line-height: 60px;
 }
 
 .head__title span {
   display: block;
   width: 10ch;
-  
 }
 
 .head__dsc {
   margin: 0.8rem 0;
   color: #344563;
   font-weight: 400;
-font-size: 20px;
-line-height: 28px;
+  font-size: 20px;
+  line-height: 28px;
 }
-
 
 .head__icons {
   margin: 0.5rem 0;
@@ -190,13 +188,13 @@ line-height: 28px;
   flex-wrap: wrap;
   gap: 8px;
   margin: 1rem 0 1.8rem;
-
 }
 
- .w1 {
-  background: #EBEBFF;
+.w1 {
+  background: #ebebff;
   border-radius: 8px;
- }
+}
+
 .works__card__topics__text {
   padding: 4px 12px;
   border-radius: 8px;
@@ -222,9 +220,9 @@ line-height: 28px;
 .about__title {
   width: 5ch;
   font-weight: 700;
-font-size: 40px;
-line-height: 52px;
-color: #091E42;
+  font-size: 40px;
+  line-height: 52px;
+  color: #091e42;
 }
 
 .about__dsc {
@@ -234,9 +232,9 @@ color: #091E42;
 .about__connect {
   text-transform: uppercase;
   font-weight: 500;
-font-size: 16px;
-line-height: 24px;
-color: #7F8CFF;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
 }
 
 .about__icons {
@@ -269,9 +267,9 @@ color: #7F8CFF;
   padding: 23px 40px 23px 0;
   cursor: pointer;
   font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: #344563;
+  font-size: 20px;
+  line-height: 24px;
+  color: #344563;
 }
 
 .about__lang__top__img {
@@ -285,13 +283,12 @@ color: #344563;
   margin: 12px 0;
   padding: 9px 12px;
   font-weight: 500;
-font-size: 15px;
-line-height: 20px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .about__frameworks {
   border-bottom: 1px solid #dfe1e6;
-  
 }
 
 .t1 {
@@ -306,8 +303,6 @@ line-height: 20px;
   justify-content: space-between;
   padding: 23px 40px 23px 0;
   cursor: pointer;
- 
-
 }
 
 .about__skills {
@@ -494,14 +489,15 @@ line-height: 20px;
 
   .contact_title {
     font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+    font-size: 40px;
+    line-height: 52px;
   }
+
   .contact__dsc {
     max-width: 570px;
     font-weight: 400;
-font-size: 20px;
-line-height: 28px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .contact__container {
