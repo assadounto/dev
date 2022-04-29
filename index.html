@@ -1,248 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PortfolioPage</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <main>
-      <header>
-        <div class="logo-placeholder">
-          <div class="logo"><a href="#">My Logo</a></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./logos/favicon-32x32.png" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Portfolio Desktop</title>
+</head>
+
+<body>
+  <div class="hero">
+    <header class="header">
+      <nav class="navbar flex">
+        <div class="navbar__logo">
+          <a href="#" class="navbar__link">My Logo</a>
         </div>
-        <nav class="menu"><img src="./logos/Union.png" alt="menu" /></nav>
-      </header>
-      <section class="container">
-        <h1 class="primary-text">I’m Richmond Glad to see you!</h1>
-        <p class="content">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
-        </p>
-        <p class="Connect">LET'S CONNECT</p>
-        <ul class="social-media">
-          <li class="twitter">
-            <a href="#"><img src="./logos/twitter.jpg" alt="github-logo" /></a>
+        <div class="navbar__menu">
+          <ul class="navbar__menu__ul ul flex">
+            <li class="navbar__menu__li">
+              <a href="#" class="navbar__menu__link link">Portfolio</a>
+            </li>
+            <li class="navbar__menu__li">
+              <a href="#" class="navbar__menu__link link">About</a>
+            </li>
+            <li class="navbar__menu__li">
+              <a href="#" class="navbar__menu__link link">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__hamb">
+          <img src="./logos/hamburguer.png" alt="hamburguer icon" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="head flex">
+      <h1 class="head__title">
+        I'm Rich <span>Glad to see you!</span>
+      </h1>
+      <p class="head__dsc">
+        I'm a software developer! I can help you build a product , feature or
+        website Look through some of my work and experience! If you like what
+        you see and have a project you need coded, don't hestiate to contact
+        me.
+      </p>
+      <a href="#" class="head__link link">LET'S CONNECT</a>
+      <div class="head__icons">
+        <ul class="head__icons__ul ul flex">
+          <li class="head__icons__li">
+            <a href="#" class="head__icons__link link"><img src="./logos/twitter.png" alt="twitter icon" /></a>
           </li>
-          <li class="linkedin">
-            <a href="#"><img src="./logos/Linkedin.png" alt="github-logo" /></a>
+          <li class="head__icons__li">
+            <a href="#" class="head__icons__link link"><img src="./logos/Linkedin.png" alt="linkedin icon" /></a>
           </li>
-          <li class="medium">
-            <a href="#"><img src="./logos/medium.png" alt="github-logo" /></a>
+          <li class="head__icons__li">
+            <a href="#" class="head__icons__link link"><img src="./logos/m.png" alt="M icon" /></a>
           </li>
-          <li class="github">
-            <a href="#"><img src="./logos/github.png" alt="github-logo" /></a>
+          <li class="head__icons__li">
+            <a href="#" class="head__icons__link link"><img src="./logos/github.png" alt="github icon" /></a>
           </li>
-          <li class="angelistic">
-            <a href="#"><img src="./logos/angelist.png" alt="github-logo" /></a>
+          <li class="head__icons__li">
+            <a href="#" class="head__icons__link link"><img src="./logos/hand.svg" alt="hand icon" /></a>
           </li>
         </ul>
-      </section>
-      <section class="works-container">
-        <div class="projects-cards">
-          <div class="card">
-            <div class="img">
-              <img src="./logos/t2.png" alt="work example" />
-            </div>
-            <h2 class="card-title">Tonic</h2>
-            <div class="tag">
-              <ul>
-                <li>Canopy</li>
-                <li>Backend-Dev</li>
-                <li>2015</li>
+      </div>
+    </section>
+
+    <section class="works">
+      <ul class="works__cards ul grid">
+        <li class="works__card flex bg-white">
+          <div class="works__card__img">
+            <img src="./logos/tonicd.png" alt="tonic project" />
+          </div>
+          <div class="works__card__text">
+            <h2 class="works__card__title">
+              Tonic
+            </h2>
+            <div class="works__card__subtitle flex">
+              <p class="works__card__subtitle-1">
+                CANOPY
+              </p>
+              <ul class="works__card__subtitle-ul flex">
+                <li class="works__card__subtitle-li">
+                  Back End Dev
+                </li>
+                <li class="works__card__subtitle-li">
+                  2015
+                </li>
               </ul>
             </div>
-            <p class="card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="works__card__dsc p1">
+              A daily selection of privately personalized reads; no accounts
+              or sign-ups required.
             </p>
-            <ul>
-              <li>html</li>
-              <li>css</li>
-              <li>Javascript</li>
-            </ul>
-            <div class="button1"><a href="#">See Project</a></div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./logos/t5.png" alt="work example" />
+            <div class="works__card__topics flex">
+              <p class="works__card__topics__text p2 w1">
+                html
+              </p>
+              <p class="works__card__topics__text p2 w1
+                  ">
+                css
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                javascript
+              </p>
             </div>
-            <p class="card-title">Multi-Post Stories</p>
-            <div class="tag">
-              <ul>
-                <li>Canopy</li>
-                <li>Backend-Dev</li>
-                <li>2015</li>
+            <div class="works__card__btn">
+              <button type="button" class="btn b1">
+                See Project
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="works__card flex bg-white">
+          <div class="works__card__img">
+            <img src="./logos/multi-post-stories-project.svg" alt="multi-post stories project" />
+          </div>
+          <div class="works__card__text">
+            <h2 class="works__card__title">
+              Multi-Post Stories
+            </h2>
+            <div class="works__card__subtitle flex">
+              <p class="works__card__subtitle-1">
+                FACEBOOK
+              </p>
+              <ul class="works__card__subtitle-ul flex">
+                <li class="works__card__subtitle-li">
+                  Full Stack Dev
+                </li>
+                <li class="works__card__subtitle-li"> 
+                  2015
+                </li>
               </ul>
             </div>
-            <p class="card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="works__card__dsc p1">
+              Experimental content creation feature that allows users to add
+              to an existing story over the course of a day without spamming
+              their friends.
             </p>
-            <ul>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <div class="button1"><a href="#">See Project</a></div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./logos/t3.png" alt="work example" />
+            <div class="works__card__topics flex">
+              <p class="works__card__topics__text p2 w1">
+                html
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                Ruby on rails
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                css
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                javascript
+              </p>
             </div>
-            <p class="card-title">Tonic</p>
-            <div class="tag">
-              <ul>
-                <li>Canopy</li>
-                <li>Backend-Dev</li>
-                <li>2015</li>
+            <div class="works__card__btn">
+              <button type="button" class="btn b1">
+                See Project
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="works__card flex bg-white">
+          <div class="works__card__img">
+            <img src="./logos/facebook-360-project.svg" alt="tonic orange project" />
+          </div>
+          <div class="works__card__text">
+            <h2 class="works__card__title">
+              Facebook 360
+            </h2>
+            <div class="works__card__subtitle flex">
+              <p class="works__card__subtitle-1">
+                FACEBOOK
+              </p>
+              <ul class="works__card__subtitle-ul flex">
+                <li class="works__card__subtitle-li">
+                  Full Stack Dev
+                </li>
+                <li class="works__card__subtitle-li">
+                  2015
+                </li>
               </ul>
             </div>
-            <p class="card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="works__card__dsc p1">
+              Exploring the future of media in Facebook's first Virtual
+              Reality app; a place to discover and enjoy 360 photos and videos
+              on Gear VR.
             </p>
-            <ul>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <div class="button1"><a href="#">See Project</a></div>
-          </div>
-          <div class="card">
-            <div class="img">
-              <img src="./logos/t4.png" alt="work example" />
+            <div class="works__card__topics flex">
+              <p class="works__card__topics__text p2 w1">
+                html
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                Ruby on rails
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                css
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                javascript
+              </p>
             </div>
-            <p class="card-title">Multi-Post Stories</p>
-            <div class="tag">
-              <ul>
-                <li>Canopy</li>
-                <li>Backend-Dev</li>
-                <li>2015</li>
+            <div class="works__card__btn">
+              <button type="button" class="btn b1">
+                See Project
+              </button>
+              </div>
+          </div>
+        </li>
+        <li class="works__card flex bg-white">
+          <div class="works__card__img">
+            <img src="./logos/uber-navigation-project.svg" alt="professional art printing project" />
+          </div>
+          <div class="works__card__text">
+            <h2 class="works__card__title">
+              Uber Navigation
+            </h2>
+            <div class="works__card__subtitle flex">
+              <p class="works__card__subtitle-1">
+                Uber
+              </p>
+              <ul class="works__card__subtitle-ul flex">
+                <li class="works__card__subtitle-li">
+                  Lead Developer
+                </li>
+                <li class="works__card__subtitle-li">
+                  2018
+                </li>
               </ul>
             </div>
-            <p class="card-text">
-              A daily selection of privately personalized reads; no accounts or
-              sign-ups required.
+            <p class="works__card__dsc p1">
+              A smart assistant to make driving more safe, efficient, and fun
+              by unlocking your most expensive computer: your car.
             </p>
-            <ul>
-              <li>html</li>
-              <li>bootstrap</li>
-              <li>Ruby</li>
-            </ul>
-            <div class="button1"><a href="#">See Project</a></div>
+            <div class="works__card__topics flex">
+              <p class="works__card__topics__text p2 w1">
+                html
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                Ruby on rails
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                css
+              </p>
+              <p class="works__card__topics__text p2 w1">
+                javascript
+              </p>
+            </div>
+            <div class="works__card__btn">
+              <button type="button" class="btn b1">
+                See Project
+              </button>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="container2">
-        <h2 class="primary-text">About Me</h2>
-        <p class="content">
-          I’m a software developer! I can help you build a product , feature or
-          website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
-          me.
+        </li>
+      </ul>
+    </section>
+
+    <section class="about bg-white flex">
+      <div class="about__myself">
+        <h2 class="about__title">
+          About Myself
+        </h2>
+        <p class="about__dsc p1">
+          Hello I'm a software developer! I can help you build a product ,
+          feature or website Look through some of my work and experience! If
+          you like what you see and have a project you need coded, don't
+          hestiate to contact me.
         </p>
-        <h2 class="Connect">LET'S CONNECT</h2>
-        <ul class="social-media">
-          <li class="twitter">
-            <a href="#"><img src="./logos/twitter.png" alt="github-logo" /></a>
-          </li>
-          <li class="linkedin">
-            <a href="#"><img src="./logos/linkedin.png" alt="github-logo" /></a>
-          </li>
-          <li class="medium">
-            <a href="#"><img src="./logos/medium.png" alt="github-logo" /></a>
-          </li>
-          <li class="github">
-            <a href="#"><img src="./logos/github.png" alt="github-logo" /></a>
-          </li>
-          <li class="angelistic">
-            <a href="#"><img src="./logos/angelist.png" alt="github-logo" /></a>
-          </li>
-        </ul>
-        <div class="button1"><a href="#">Get My Resume</a></div>
-
-        <div class="skill-title">
-          <div class="container1">
-            <p class="skill">Languages</p>
-            <p class="dropdown">--</p>
-          </div>
-          <div class="container1">
-            <div class="javascript">
-              <img src="./logos/javascript2.png" alt="github-logo" />Javascript
-            </div>
-            <div class="html">
-              <img src="./logos/html.png" alt="github-logo" />Html
-            </div>
-            <div class="css">
-              <img src="./logos/css.png" alt="github-logo" />Css
-            </div>
-            <h2 class="skill2">Frameworks</h2>
-
-            <h2 class="skill2">Skills</h2>
-          </div>
+        <h3 class="about__connect">
+          Let's Connect
+        </h3>
+        <div class="about__icons">
+          <ul class="about__icons__ul ul flex">
+            <li class="about__icons__li">
+              <a href="#" class="about__icons__link link"><img src="./logos/github.png" alt="github icon" /></a>
+            </li>
+            <li class="about__icons__li">
+              <a href="#" class="about__icons__link link"><img src="./logos/Linkedin.png" alt="linkedin icon" /></a>
+            </li>
+            <li class="about__icons__li">
+              <a href="#" class="about__icons__link link"><img src="./logos/peace.png" alt="hand icon" /></a>
+            </li>
+            <li class="about__icons__li">
+              <a href="#" class="about__icons__link link"><img src="./logos/twitter.png" alt="twitter icon" /></a>
+            </li>
+            <li class="about__icons__li">
+              <a href="#" class="about__icons__link link"><img src="./logos/m.png" alt="M icon" /></a>
+            </li>
+          </ul>
         </div>
-      </section>
-
-      <section class="contactSection" id="contactSection">
-        <h1 class="title4">Contact Me</h1>
-        <p class="introText">
-          If you have an application you are interested in developing, 
-          a feature that you need built or a project that needs coding.
-          I’d love to help with it 
-            </p>
-          <div class="contactForm">
-            <form
-              action="https://formspree.io/f/xjvlpydr"
-              class="form"
-              method="post"
-            >
-              <input
-                type="text"
-                name="user_name"
-                id="user_name"
-                placeholder="Full name"
-                maxlength = "30"
-                required
-                
-                
-              />
-              <input
-                type="email"
-                name="user_email"
-                id="user_email"
-                placeholder="Email address"
-                required
-              />
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-                placeholder="Enter Text Here"
-                maxlength="500"
-                required
-              ></textarea>
-              <input
-              type="submit"
-              name="submitbutton"
-              id="submit"
-              class="submitbutton"
-              value="Get in touch"
-              />
-
-            
-            </form>
+        <div class="about__btn">
+          <button type="button" class="btn b1">
+            Get my resume
+          </button>
+        </div>
+      </div>
+      <ul class="about__tools ul">
+        <li class="about__lang">
+          <div class="about__lang__top flex">
+            <h2 class="t1">
+              Languages
+            </h2>
+            <img class="about__lang__top__img" src="./logos/arrow.png" alt="arrow icon" />
           </div>
-      </section>
-    </main>
-  </body>
+          <ul class="about__lang__bottom ul">
+            <li class="flex bg-n-300">
+              <img src="./logos/javascript.png" alt="javascript icon" />
+              <p class="about__lang__bottom__name">
+                JavaScript
+              </p>
+            </li>
+            <li class="flex bg-n-300">
+              <img src="./logos/html.png" alt="html icon" />
+              <p class="about__lang__bottom__name">
+                HTML
+              </p>
+            </li>
+            <li class="flex bg-n-300">
+              <img src="./logos/css.png" alt="css icon" />
+              <p class="about__lang__bottom__name">
+                CSS
+              </p>
+            </li>
+          </ul>
+        </li>
+        <li class="about__frameworks">
+          <div class="about__frameworks__top flex">
+            <h2 class="t1">
+              Frameworks
+            </h2>
+            <img class="about__frameworks__top__img" src="./logos/arrow.png" alt="arrow icon" />
+          </div>
+        </li>
+        <li class="about__skills">
+          <div class="about__skills__top flex">
+            <h2 class="t1">
+              Skills
+            </h2>
+            <img class="about__skills__top__img" src="./logos/arrow.png" alt="arrow icon" />
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="contact">
+      <div class="contact__container">
+        <h2 class="contact__title">Contact me</h2>
+        <p class="contact__dsc">
+          If you have an application you are interested in developing, a
+          feature that you need built or a project that needs coding. I'd love
+          to help with it
+        </p>
+        <form action="https://formspree.io/forms/mqkngpww" method="post">
+          <ul class="ul">
+            <li>
+              <input type="text" class="contact__name" name="contact_name"
+                placeholder="Enter your name" required maxlength="30" />
+            </li>
+            <li>
+              <input type="email" class="contact__email" placeholder="Enter your email"
+                name="contact_email" required />
+            </li>
+            <li>
+              <textarea class="fw-500 fz-17 lh-20" name="contact_message" placeholder="Write your message here"
+                cols="30" rows="8" maxlength="500" required></textarea>
+            </li>
+            <li>
+              <input type="submit" value="Get It Touch" class="btn b1" />
+            </li>
+          </ul>
+
+        </form>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
