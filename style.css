@@ -527,6 +527,10 @@ p {
     transform: translate(30px);
   }
 
+  .works__card__img:hover {
+    transform: scale(1.2);
+  }
+
   .navbar__logo {
     animation: rotatelogo 5s;
   }
