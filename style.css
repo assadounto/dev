@@ -523,16 +523,16 @@ p {
     color: white;
   }
 
-  ::placeholder:hover {
-    transform: translate(30px);
-  }
-
   .works__card__img:hover {
     transform: scale(1.2);
   }
 
   .navbar__logo {
     animation: rotatelogo 5s;
+  }
+
+  .contact__dsc:hover {
+    transform: translate(-40px);
   }
 
   @keyframes rotatelogo {
