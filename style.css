@@ -537,7 +537,7 @@ p {
 
   @keyframes rotatelogo {
     to {
-      transform: rotateZ(-3240deg);
+      transform: rotate(-3240deg);
     }
   }
 }
