@@ -522,4 +522,18 @@ p {
     background: #2230d2;
     color: white;
   }
+
+  ::placeholder:hover {
+    transform: translate(30px);
+  }
+
+  .navbar__logo {
+    animation: rotatelogo 5s;
+  }
+
+  @keyframes rotatelogo {
+    to {
+      transform: rotateZ(-3240deg);
+    }
+  }
 }
