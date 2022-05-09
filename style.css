@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body,
@@ -14,6 +14,42 @@ h3,
 p {
   margin: 0;
   padding: 0;
+}
+
+.Overlay {
+  height: 100vh;
+  width: 100%;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  position: fixed;
+  z-index: 99;
+  display: none;
+  filter: blur(0.4rem);
+}
+.Overlay a {
+  text-decoration: none;
+}
+
+.closebtn {
+  margin-left: 90%;
+  color: white;
+  font-size: 35px;
+}
+
+.Overlay-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 28px;
+}
+
+.Overlay-content a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .hero {
@@ -86,10 +122,10 @@ p {
 }
 
 .head::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #fff;
-  background-image: url("./logos/cshap.png");
+  background-image: url('./logos/cshap.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +140,7 @@ p {
 
 .head {
   flex-direction: column;
-  background-image: url("./logos/headershape.png");
+  background-image: url('./logos/headershape.png');
   align-items: flex-start;
   position: relative;
   padding: 6rem 1.5rem;
@@ -317,10 +353,10 @@ p {
 }
 
 .contact::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #6070ff;
-  background-image: url("./logos/cshape.png");
+  background-image: url('./logos/cshape.png');
   background-size: contain;
   background-position: right;
   background-origin: content-box;
@@ -401,7 +437,7 @@ p {
   }
 
   .head::before {
-    background-image: url("./logos/headershape.png");
+    background-image: url('./logos/headershape.png');
     padding: 6rem;
     border-bottom-left-radius: 8rem;
   }
@@ -475,7 +511,7 @@ p {
   }
 
   .contact::before {
-    background-image: url("./logos/cshape.png");
+    background-image: url('./logos/cshape.png');
     padding: 1rem;
     border-top-left-radius: 8rem;
   }
