@@ -12,14 +12,23 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Portfolio Desktop</title>
   </head>
-
+  <div class="Overlay" id="Mynav">
+    <a href="#" class="closebtn" onclick="closeNav()" 
+      >&times;</a
+    >
+    <div class="Overlay-content" id="Mynav" onclick="closeNav()">
+      <a href="#works">Portfolio</a>
+      <a href="#head">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
   <body>
     <script src=" main.js"></script>
     <div class="hero">
       <header class="header">
         <nav class="navbar flex" id="mob-nav">
           <div class="navbar__logo">
-            <a href="#" class="navbar__link">My Logo</a>
+            <a href="#" class="navbar__link"id="logo">My Logo</a>
           </div>
           <div class="navbar__menu">
             <ul class="navbar__menu__ul ul flex">
@@ -34,7 +43,7 @@
               </li>
             </ul>
           </div>
-          <div class="navbar__hamb">
+          <div class="navbar__hamb" id="hamb">
             <img
               src="./logos/hambur.png"
               alt="hamburguer icon"
@@ -43,19 +52,7 @@
           </div>
         </nav>
       </header>
-      <section>
-        <div class="Overlay" id="Mynav">
-          <a href="javacscript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <div class="Overlay-content">
-            <a href="#">Portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-          </div>
-        </div>
-      </section>
-
+    
       <section class="head flex" id="head">
         <h1 class="head__title">I'm Rich <span>Glad to see you!</span></h1>
         <p class="head__dsc">
@@ -96,7 +93,7 @@
         </div>
       </section>
 
-      <section class="works">
+      <section class="works" id="works">
         <ul class="works__cards ul grid">
           <li class="works__card flex bg-white">
             <div class="works__card__img">
@@ -313,7 +310,7 @@
           </li>
         </ul>
       </section>
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="contact__container">
           <h2 class="contact__title">Contact me</h2>
           <p class="contact__dsc">
