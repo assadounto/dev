@@ -17,7 +17,7 @@
     <script src=" main.js"></script>
     <div class="hero">
       <header class="header">
-        <nav class="navbar flex">
+        <nav class="navbar flex" id="mob-nav">
           <div class="navbar__logo">
             <a href="#" class="navbar__link">My Logo</a>
           </div>
@@ -35,12 +35,16 @@
             </ul>
           </div>
           <div class="navbar__hamb">
-            <img src="./logos/hambur.png" alt="hamburguer icon" onclick ="OpenNav()"/>
+            <img
+              src="./logos/hambur.png"
+              alt="hamburguer icon"
+              onclick="openNav()"
+            />
           </div>
         </nav>
       </header>
       <section>
-        <div class="Overlay" id=" Mynav">
+        <div class="Overlay" id="Mynav">
           <a href="javacscript:void(0)" class="closebtn" onclick="closeNav()"
             >&times;</a
           >
@@ -52,7 +56,7 @@
         </div>
       </section>
 
-      <section class="head flex">
+      <section class="head flex" id="head">
         <h1 class="head__title">I'm Rich <span>Glad to see you!</span></h1>
         <p class="head__dsc">
           I'm a software developer! I can help you build a product , feature or

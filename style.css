@@ -24,7 +24,7 @@ p {
   position: fixed;
   z-index: 99;
   display: none;
-  filter: blur(0.4rem);
+  /* filter: blur(0.4rem); */
 }
 .Overlay a {
   text-decoration: none;
