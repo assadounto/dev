@@ -3,8 +3,8 @@ let isClicked = false;
 function openNav() {
   if (!isClicked) {
     document.getElementById('Mynav').style.display = 'block';
-    document.getElementById('head').style.filter = 'blur(0.3rem)';
-    document.getElementById('logo').style.filter = 'blur(0.3rem)';
+    document.getElementById('head').style.filter = 'blur(0.9rem)';
+    document.getElementById('logo').style.filter = 'blur(0.9rem)';
     document.getElementById('hamb').style.display = 'none';
     isClicked = true;
   } else {
