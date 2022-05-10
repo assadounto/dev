@@ -2,14 +2,14 @@
 
 # Porfolio Project
 
-> This is a portfolio project created using media queries
+> This is a portfolio project is created using DOM manipulation
 
 
 ## Built With
 
-- HTML and 
-- HTML and CSS
-- StyleLint, Webhint
+- HTML  
+- CSS 
+- JAVASCRIPT
 
 ## Live Demo 
 
@@ -23,8 +23,9 @@ To get a local copy up and running follow these simple example steps.
 clone Repo using ssh by running git clone <Portfolio_Desktop_Version>
 
 ### Prerequisites
-stylent
+stylint
 webhint 
+eslint
 
 ### Setup
 
@@ -47,9 +48,11 @@ webhint
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 
-## 🤝 Contributing
+## 🤝 Contributing Member
 
-Contributions, issues, and feature requests are welcome!
+<ul>
+<li><a href="https://github.com/NatiDeme">@Github:&nbsp; NatiDeme</a></li>
+</ul>
 
 Feel free to check the [issues page](../../issues/).
 
