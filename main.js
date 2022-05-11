@@ -29,7 +29,7 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     image: {
-      link: 'img/modal popup.png',
+      link: 'logos/tonic-project-desktop.svg',
       alt: 'Project Screenshot',
     },
 
@@ -40,10 +40,10 @@ const projects = [
     id: 1,
     name: 'Multi-Post Stories',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     image: {
-      link: 'img/modal popup.png',
+      link: 'logos/multi-post-stories-project.svg',
       alt: 'Multi-Post Stories screenshot',
     },
     liveSource: '#',
@@ -56,7 +56,7 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     image: {
-      link: 'img/modal popup.png',
+      link: 'logos/popup.png',
       alt: 'Facebook 360screenshot',
     },
     liveSource: '#',
@@ -69,7 +69,7 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     image: {
-      link: 'img/modal popup.png',
+      link: 'logos/popup.png',
       alt: 'Uber Navigation screenshot',
     },
     liveSource: '#',
@@ -82,12 +82,12 @@ const projects = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
     image: {
-      link: 'img/modal popup.png',
+      link: 'logos/popup.png',
       alt: 'Uber Navigation screenshot',
     },
     liveSource: '#',
     sourceCode: '#',
-  } 
+  },
 ];
 
 const modalDetails = document.createElement('div');
@@ -103,31 +103,41 @@ function showDetails(projectIndex) {
     <div class="closeDetails" id="closeDetails">&times;</div>
     </div>
      
-      <img class="project-image" src="${projects[projectIndex].image.link}" alt="${projects[projectIndex].image.alt}" />
+      <img class="project-image" src="${
+        projects[projectIndex].image.link
+      }" alt="${projects[projectIndex].image.alt}" />
       <div class="project-info">
-        <h2 class="
-        project-title">Keeping track of hundreds of
-        components</h2>
-        <div class="buttons">
-          <a href="${
-  projects[projectIndex].liveSource
-}" class="btn green-button">See Live <i class="fa fa-external-link"></i></a>
-           <a href="${
-  projects[projectIndex].sourceCode
-}" class="btn green-button">See Source <i class="fa fa-github"></i></a>
         </div>
-        </div>
-        <div class="tech-and-buttons">
-          <ul class="card-languages">
-            ${(function usedTech() {
-    return projects[projectIndex].technologies
-      .map((tech) => `<li class="language">${tech}</li>`)
-      .join('');
-  }())}
-          </ul>
+      <div class="tech-and-buttons">
+        <div>
         <p class="description">
          ${projects[projectIndex].description}
         </p>
+        </div>
+        <div>
+        <div>  
+          <ul class="card-languages">
+            ${(function usedTech() {
+              return projects[projectIndex].technologies
+                .map((tech) => `<li class="language">${tech}</li>`)
+                .join('');
+            })()}
+          </ul>
+        </div>
+        <div class="">
+          <a  href="${
+            projects[projectIndex].liveSource
+          }" class="btn green-button b1">See Live <i class="fa fa-external-link"></i></a>
+           <a href="${
+             projects[projectIndex].sourceCode
+           }" class="btn green-button">See Source <i class="fa fa-github"></i></a>
+        </div>
+
+        </div>
+          </div>
+
+          
+      
   </div>`;
 
   modalDetails.innerHTML += projectsCode;
@@ -169,9 +179,7 @@ for (let j = 0; j < projects.length; j += 1) {
                 <p class="works__card__topics__text p2 w1">javascript</p>
               </div>
               <div class="works__card__btn">
-                <button type="button" class="btn b1 details-btn " type="button" data-id="${
-  projects[j].id
-}">See Project</button>
+                <button type="button" class="btn b1 details-btn " type="button" data-id="${projects[j].id}">See Project</button>
               </div>
             </div>
           </li>`;

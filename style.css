@@ -437,6 +437,16 @@ p {
     padding: 20px 24px 0 24px;
   }
 
+  .green-button{
+    width: 124px;
+    height: 48px;
+    padding: 12px;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  }
+
   .btn {
     margin: 10px;
   }
@@ -456,6 +466,8 @@ p {
 
   .details-container-content {
     width: 80%;
+    height: 1163px;
+    overflow: auto;
     margin: 20px auto;
     background-color: #fff;
     padding: 15px 15px;
@@ -510,22 +522,41 @@ p {
 
   .card-languages {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: start;
+    gap: 4px;
+    /* justify-content: start; */
+    list-style: none;
+    padding-left: 0;
+    padding: 4px 12px;
+  }
+
+  .card-languages li {
+    background-color: #ebebff;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .description {
     font-family: Inter, sans-serif;
     font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     color: #344563;
     margin-top: 20px;
-    text-align: justify;
+    font-weight: 400;
+    line-height: 30px;
+    width: 778px;
+    height: 382px;
+    padding-left: 24px;
   }
 
   .tech-and-buttons {
-    padding: 24px;
+    /* padding: 24px; */
+    display: flex;
+    gap: 24px;
+    padding-top: 59px;
   }
 
   .language {
