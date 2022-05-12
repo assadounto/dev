@@ -1,4 +1,7 @@
 let isClicked = false;
+const form = document.getElementById('form');
+const emailInupt =document.getElementById('user_email');
+const error = document.getElementById('error');
 
 function openNav() {
   if (!isClicked) {
@@ -201,4 +204,16 @@ showButton.forEach((btn) => {
     showDetails(event.target.dataset.id);
     document.getElementById('hero').style.filter = 'blur(1.9rem)';
   });
+});
+
+form.addEventListener('submit', (event) => {
+  let check = false;
+  if (emailInput.value.toLowerCase() === emailInput.value) {
+    check = true;
+  }
+  if (check === false) {
+    event.preventDefault();
+    error.innerText = 'Please Your Email Must be in Lower Case';
+    error.style.color = 'red';
+  }
 });
