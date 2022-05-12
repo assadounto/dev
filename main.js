@@ -131,10 +131,16 @@ function showDetails(projectIndex) {
           <div class="buttons">
             <a href="${
   projects[projectIndex].liveSource
-}" class="btn green-button">See Live <img src="logos/Icon.png"></i></a>
+}" class="btn green-button">
+<div class ="it">See Live</div>
+<div class="image"><img src="logos/Icon.png"></div>
+ </a>
+
              <a href="${
   projects[projectIndex].sourceCode
-}" class="btn green-button">See Source <img src="logos/Vector.png"></i></a>
+}" class="btn green-button"><div class ="it">See Live</div>
+<div class="image"><img src="logos/Vector.png"></div>
+ </a>
           </div>
           </div>
     </div>

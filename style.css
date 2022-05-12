@@ -197,6 +197,16 @@ p {
   color: #396df2;
   margin-top: 15px;
   text-decoration: none;
+  width: 102px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.it {
+  margin-right: 15px;
+  margin-top: 2px;
+  font-size: 8.5px;
 }
 
 .green-button:hover {
@@ -782,10 +792,20 @@ p {
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
-    line-height: 24px;
     color: #396df2;
     margin-top: 15px;
     text-decoration: none;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    width: 130px;
+    height: 40px;
+  }
+
+  .it {
+    margin-right: 12px;
+    margin-top: 2px;
+    font-size: 14px;
   }
 
   .green-button:hover {
