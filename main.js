@@ -1,6 +1,5 @@
 let isClicked = false;
 const form = document.getElementById('form');
-const emailInupt =document.getElementById('user_email');
 const error = document.getElementById('error');
 
 function openNav() {
@@ -208,6 +207,7 @@ showButton.forEach((btn) => {
 
 form.addEventListener('submit', (event) => {
   let check = false;
+  const emailInput = document.getElementById('user_email');
   if (emailInput.value.toLowerCase() === emailInput.value) {
     check = true;
   }
