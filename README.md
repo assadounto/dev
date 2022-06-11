@@ -2,14 +2,13 @@
 
 # Porfolio Project
 
-> This is a portfolio project created using media queries
+ This is a portfolio project created using HTML , CSS and Javascript
+ 
 
 
 ## Built With
 
-- HTML and 
-- HTML and CSS
-- StyleLint, Webhint
+- HTML CSS Javascript
 
 ## Live Demo 
 
@@ -20,19 +19,21 @@
 
 
 To get a local copy up and running follow these simple example steps.
-clone Repo using ssh by running git clone <Portfolio_Desktop_Version>
+clone Repo using ssh by running git clone Portfolio_Desktop_Version>
 
-### Prerequisites
+## Prerequisites
 stylent
 webhint 
 
 ### Setup
 
-### Install
+## Install
 
-### Usage
+## Usage
 
-### Run tests
+## Run tests
+stylent
+webhint 
 
 ### Deployment
 
