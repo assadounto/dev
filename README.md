@@ -2,7 +2,8 @@
 
 # Porfolio Project
 
-> This is a portfolio project is created using DOM manipulation
+ This is a portfolio project created using HTML , CSS and Javascript
+ 
 
 
 ## Built With
@@ -20,20 +21,22 @@
 
 
 To get a local copy up and running follow these simple example steps.
-clone Repo using ssh by running git clone <Portfolio_Desktop_Version>
+clone Repo using ssh by running git clone Portfolio_Desktop_Version>
 
-### Prerequisites
-stylint
+## Prerequisites
+stylent
 webhint 
 eslint
 
 ### Setup
 
-### Install
+## Install
 
-### Usage
+## Usage
 
-### Run tests
+## Run tests
+stylent
+webhint 
 
 ### Deployment
 
