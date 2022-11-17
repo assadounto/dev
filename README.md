@@ -8,7 +8,9 @@
 
 ## Built With
 
-- HTML CSS Javascript
+- HTML  
+- CSS 
+- JAVASCRIPT
 
 ## Live Demo 
 
@@ -24,6 +26,7 @@ clone Repo using ssh by running git clone Portfolio_Desktop_Version>
 ## Prerequisites
 stylent
 webhint 
+eslint
 
 ### Setup
 
@@ -48,9 +51,11 @@ webhint
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 
-## 🤝 Contributing
+## 🤝 Contributing Member
 
-Contributions, issues, and feature requests are welcome!
+<ul>
+<li><a href="https://github.com/NatiDeme">@Github:&nbsp; NatiDeme</a></li>
+</ul>
 
 Feel free to check the [issues page](../../issues/).
 
