@@ -26,68 +26,68 @@ function menuClicked() {
 const projects = [
   {
     id: 0,
-    place: 'CANOPY',
-    title: 'Back End Dev',
-    year: '2015',
-    name: 'Tonic',
+    place: 'Microverse',
+    title: 'Fontend End Project',
+    year: '2022',
+    name: 'Metrics App',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: ['html', 'css', 'javascript', 'Ruby', 'github', 'Boostrap'],
+      "This is a Metrics app that fetches metrics data (air-pollution) of countries in the world",
+    technologies: ['html', 'css', 'react', 'github', 'Boostrap'],
     image: {
-      link: 'logos/tonic-project-desktop.svg',
-      alt: 'Project Screenshot',
+      link: 'logos/metric.png',
+      alt: 'metric app picture',
     },
 
-    liveSource: '#',
-    sourceCode: '#',
+    liveSource: 'https://metric-app-rich.netlify.app/',
+    sourceCode: 'https://github.com/assadounto/wiki-app/',
   },
   {
     id: 1,
-    name: 'Multi-Post Stories',
-    place: 'Facebook',
-    title: 'Full Stack Dev',
-    year: '2015',
+    name: 'Tv Maze',
+    place: 'Microverse',
+    title: 'Frontend Dev Project',
+    year: '2022',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
+      "In this project we created a fully functional web app that fetches tv shows from an api TV-maze Users can also comment and like movies and shows.",
+    technologies: [ 'css', 'javascript', 'html'],
     image: {
-      link: 'logos/multi-post-stories-project.svg',
-      alt: 'Multi-Post Stories screenshot',
+      link: 'logos/tvmaze.png',
+      alt: 'Tv maze',
     },
-    liveSource: '#',
-    sourceCode: '#',
+    liveSource: 'https://teckim.github.io/tv-maze/',
+    sourceCode: 'https://github.com/assadounto/tv-maze',
   },
   {
     id: 2,
-    name: 'Facebook 360',
-    place: 'Facebook',
-    title: 'Full Stack Dev',
-    year: '2015',
+    name: 'My Conference',
+    place: 'Microverse',
+    title: 'Frontend Dev Project',
+    year: '2022',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
+      "This a professional website based on Behance design . It is a project that uses Javascript objects to dynamically render DOM elements",
+    technologies: ['css', 'javascript', 'html'],
     image: {
-      link: 'logos/facebook-360-project.svg',
-      alt: 'Facebook 360screenshot',
+      link: 'logos/conf.png',
+      alt: 'My conference',
     },
-    liveSource: '#',
-    sourceCode: '#',
+    liveSource: 'https://assadounto.github.io/Final-Capstone1/',
+    sourceCode: 'https://github.com/assadounto/Final-Capstone1',
   },
   {
     id: 3,
-    name: 'Uber',
-    place: 'Uber',
-    title: 'Lead Developer',
-    year: '2018',
+    name: 'Book A Developer',
+    place: 'Micoverse',
+    title: 'Full-Stack App Project',
+    year: '2022',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    technologies: ['Ruby on rails', 'css', 'javascript', 'html'],
+      "Full stack website for users to book developers for a project.",
+    technologies: ['Ruby on rails', 'css', 'React', 'html'],
     image: {
-      link: 'logos/uber-navigation-project.svg',
-      alt: 'Uber Navigation screenshot',
+      link: 'logos/dev.png',
+      alt: 'Book a Dev',
     },
-    liveSource: '#',
-    sourceCode: '#',
+    liveSource: 'https://github.com/assadounto/Book-a-dev',
+    sourceCode: 'https://github.com/assadounto/Book-a-dev',
   },
 ];
 
@@ -167,7 +167,7 @@ for (let j = 0; j < projects.length; j += 1) {
   projectsCard += `
   <li class="works__card flex bg-white">
             <div class="works__card__img">
-              <img src="./logos/tonicd.png" alt="tonic project" />
+              <img src="${projects[j].image.link}" alt="tonic project" />
             </div>
             <div class="works__card__text">
               <h2 class="works__card__title">${projects[j].name}</h2>
@@ -179,8 +179,7 @@ for (let j = 0; j < projects.length; j += 1) {
                 </ul>
               </div>
               <p class="works__card__dsc p1">
-                A daily selection of privately personalized reads; no accounts
-                or sign-ups required.
+              ${projects[j]. description}
               </p>
               <div class="works__card__topics flex">
                 <p class="works__card__topics__text p2 w1">html</p>
