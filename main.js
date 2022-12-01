@@ -125,8 +125,7 @@ function showDetails(projectIndex) {
         <div class="tech-and-buttons">
           <div class="card-languages">
             ${(function usedTech() {
-    return projects[projectIndex].technologies
-      .map((tech) => `<li class="language">${tech}</li>`)
+    return projects[projectIndex].technologies.map((tech) => `<li class="language">${tech}</li>`)
       .join('');
   }())}
           </div>
@@ -182,9 +181,11 @@ for (let j = 0; j < projects.length; j += 1) {
               ${projects[j]. description}
               </p>
               <div class="works__card__topics flex">
-                <p class="works__card__topics__text p2 w1">html</p>
-                <p class="works__card__topics__text p2 w1">css</p>
-                <p class="works__card__topics__text p2 w1">javascript</p>
+              ${(function usedTech() {
+                return projects[j].technologies
+                  .map((tech) => `<p class="works__card__topics__text p2 w1">${tech}</p>`)
+                  .join('');
+              }())}
               </div>
               <div class="works__card__btn">
                 <button type="button" class="btn b1 details-btn " type="button" data-id="${
