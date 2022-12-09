@@ -16,6 +16,13 @@ p {
   padding: 0;
 }
 
+.show {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
 /* smal screen */
 .details-container {
   position: fixed;
@@ -31,6 +38,8 @@ p {
   align-content: center;
   mix-blend-mode: multiply;
 }
+
+
 
 /* Modal styling */
 .project-image {
@@ -615,6 +624,8 @@ p {
   margin: 18px 0;
 }
 
+
+
 @media (min-width: 708px) {
   /* ---------- CARD DETAILS ------------ */
 
@@ -733,6 +744,8 @@ p {
   .c2 {
     color: #7a869a;
   }
+
+
 
   .headtitle {
     font-weight: 700;
@@ -963,6 +976,14 @@ p {
   .contact__dsc:hover {
     transform: translate(-40px);
   }
+  .show {
+    display: none;
+  }
+  
+  .rotate{
+    transform: rotate(360deg);
+  }
+  
 
   @keyframes rotatelogo {
     to {

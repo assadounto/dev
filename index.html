@@ -18,8 +18,8 @@
   </head>
   <body>
     <div class="Overlay" id="Mynav">
-      <a href="#" class="closebtn" onclick="menuClicked()">&times;</a>
-      <div class="Overlay-content" onclick="menuClicked()">
+      <a href="#" class="closebtn">&times;</a>
+      <div class="Overlay-content">
         <a href="#portfolio-section">Portfolio</a>
         <a href="#head">About</a>
         <a href="#contact">Contact</a>
@@ -146,44 +146,36 @@
               <h2 class="t1">Languages</h2>
               <img
                 class="about__lang__top__img"
+                id="about__lang__img"
                 src="./logos/arrow.png"
                 alt="arrow icon"
               />
             </div>
-            <ul class="about__lang__bottom ul">
-              <li class="flex bg-n-300">
-                <img src="./logos/javascript.png" alt="javascript icon" />
-                <p class="about__lang__bottom__name">JavaScript</p>
-              </li>
-              <li class="flex bg-n-300">
-                <img src="./logos/html.png" alt="html icon" />
-                <p class="about__lang__bottom__name">HTML</p>
-              </li>
-              <li class="flex bg-n-300">
-                <img src="./logos/css.png" alt="css icon" />
-                <p class="about__lang__bottom__name">CSS</p>
-              </li>
-            </ul>
+            <div id="lan"></div>
           </li>
           <li class="about__frameworks">
             <div class="about__frameworks__top flex">
               <h2 class="t1">Frameworks</h2>
               <img
-                class="about__frameworks__top__img"
+                class="about__lang__top__img"
+                id="about__frame__img"
                 src="./logos/arrow.png"
                 alt="arrow icon"
               />
             </div>
+            <div id="frame"></div>
           </li>
           <li class="about__skills">
             <div class="about__skills__top flex">
               <h2 class="t1">Skills</h2>
               <img
-                class="about__skills__top__img"
+                class="about__lang__top__img"
+                 id="about__skills__img"
                 src="./logos/arrow.png"
                 alt="arrow icon"
               />
             </div>
+            <div id="skills"></div>
           </li>
         </ul>
       </section>
@@ -240,6 +232,6 @@
         </div>
       </section>
     </div>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
   </body>
 </html>

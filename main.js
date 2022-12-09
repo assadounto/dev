@@ -1,3 +1,6 @@
+import {projects}   from './project.js';
+import {languages,skills,frameworks} from './tech_fram_skills.js';
+
 let isClicked = false;
 const form = document.getElementById('form');
 const error = document.getElementById('error');
@@ -23,73 +26,74 @@ function menuClicked() {
   openNav();
 }
 
-const projects = [
-  {
-    id: 0,
-    place: 'Microverse',
-    title: 'Fontend End Project',
-    year: '2022',
-    name: 'Metrics App',
-    description:
-      "This is a Metrics app that fetches metrics data (air-pollution) of countries in the world",
-    technologies: ['html', 'css', 'react', 'github', 'Boostrap'],
-    image: {
-      link: 'logos/metric.png',
-      alt: 'metric app picture',
-    },
+document.querySelector('.closebtn').addEventListener('click', menuClicked);
 
-    liveSource: 'https://metric-app-rich.netlify.app/',
-    sourceCode: 'https://github.com/assadounto/wiki-app/',
-  },
-  {
-    id: 1,
-    name: 'Tv Maze',
-    place: 'Microverse',
-    title: 'Frontend Dev Project',
-    year: '2022',
-    description:
-      "In this project we created a fully functional web app that fetches tv shows from an api TV-maze Users can also comment and like movies and shows.",
-    technologies: [ 'css', 'javascript', 'html'],
-    image: {
-      link: 'logos/tvmaze.png',
-      alt: 'Tv maze',
-    },
-    liveSource: 'https://teckim.github.io/tv-maze/',
-    sourceCode: 'https://github.com/assadounto/tv-maze',
-  },
-  {
-    id: 2,
-    name: 'My Conference',
-    place: 'Microverse',
-    title: 'Frontend Dev Project',
-    year: '2022',
-    description:
-      "This a professional website based on Behance design . It is a project that uses Javascript objects to dynamically render DOM elements",
-    technologies: ['css', 'javascript', 'html'],
-    image: {
-      link: 'logos/conf.png',
-      alt: 'My conference',
-    },
-    liveSource: 'https://assadounto.github.io/Final-Capstone1/',
-    sourceCode: 'https://github.com/assadounto/Final-Capstone1',
-  },
-  {
-    id: 3,
-    name: 'Book A Developer',
-    place: 'Micoverse',
-    title: 'Full-Stack App Project',
-    year: '2022',
-    description:
-      "Full stack website for users to book developers for a project.",
-    technologies: ['Ruby on rails', 'css', 'React', 'html'],
-    image: {
-      link: 'logos/dev.png',
-      alt: 'Book a Dev',
-    },
-    liveSource: 'https://github.com/assadounto/Book-a-dev',
-    sourceCode: 'https://github.com/assadounto/Book-a-dev',
-  },
-];
+document.querySelector('.Overlay-content').addEventListener('click', menuClicked);
+
+document.getElementById('hamb').addEventListener('click', openNav);
+
+document.querySelector(".about__frameworks__top").addEventListener('click', show_frameworks);
+
+document.querySelector(".about__lang__top").addEventListener('click', show_languages);
+
+document.querySelector(".about__skills__top").addEventListener('click', show_skills);
+
+function show_languages() {
+  const languages = document.getElementById('lan');
+  const image = document.getElementById('about__lang__img');
+  languages.classList.toggle('show');
+  image.classList.toggle('rotate');
+}
+
+
+function show_frameworks() {
+  const frameworks = document.getElementById('frame');
+  const image = document.getElementById('about__frame__img');
+  frameworks.classList.toggle('show');
+  image.classList.toggle('rotate');
+}
+
+function show_skills() {
+  const skills = document.getElementById('skills');
+  const image = document.getElementById('about__skills__img');
+   skills.classList.toggle('show');
+  image.classList.toggle('rotate');
+}
+
+
+
+const lan =`<div class="tech-and-buttons">
+          <div class="card-languages">
+            ${(function usedTech() {
+    return languages.map((tech) => `<li class="language">${tech}</li>`)
+      .join('');
+  }())}
+          </div>`
+
+
+document.getElementById('lan').innerHTML = lan;
+
+const frame =`<div class="tech-and-buttons">
+          <div class="card-languages">
+            ${(function usedTech() {
+    return frameworks.map((tech) => `<li class="language">${tech}</li>`)
+      .join('');
+  }())}
+          </div>`
+
+document.getElementById('frame').innerHTML = frame;
+
+const skill =`<div class="tech-and-buttons">
+          <div class="card-languages">
+            ${(function usedTech() {
+    return skills.map((tech) => `<li class="language">${tech}</li>`)
+              
+      .join('');
+  }())}
+          </div>`
+document.getElementById('skills').innerHTML = skill; 
+
+
 
 const modalDetails = document.createElement('div');
 modalDetails.id = 'modal-details';
