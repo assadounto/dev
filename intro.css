@@ -1,0 +1,301 @@
+#port,#replay,#real,#document {
+    display: none
+} 
+
+
+/* 
+ * Hello! I'm rich
+ * A software engineer.
+ * I use my problem solving skills to help campanies
+ * solve clients problems effectively and faster.
+ * I love to do hard and difficult things
+ * I am opened to new opportunities
+ * 
+ * 
+ * Currently, I'm opened to work remote ,contract or fultime
+ * This is my portfolio, a website. that builds itself
+ * Basically it shows what i can do as a programmer
+ *
+ */
+
+; DELAY 420
+/*
+ * Oh... There's nothing here...                
+ * Let me fix that.
+ * 
+ * First, lets animate EVERYTHING!
+ */
+; DELAY 420
+
+
+*  {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+; styles true 2
+/*
+ * Where's the animation?
+ * You will see... :)
+ */
+; DELAY 420
+ 
+/*
+ * Let me create some space to work with.
+ *
+ * AND I SAY, "LET THERE BE A GRAY BOX AND WHITE TEXT!"
+ */
+; styles true 1
+
+pre:not(:empty)  {
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    overflow: auto;
+    padding-bottom: 2em;
+}
+pre:hover  {
+    box-shadow: 0px 0px 30px 5px rgba(255,255,255,0.4);
+}
+
+@media only screen and (min-width:769px) {
+    pre:not(:empty)  {
+        height: 85%;
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    pre:not(:empty) {
+        width: 95%;
+        height: 40%;
+        position: absolute;
+    }
+}
+
+#styles  {
+    position: absolute;
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+}
+; styles true 2
+; DELAY 420
+
+/*
+ * Let me fix this footer and add a nice background.
+ * This has probably been bothering you for a while.
+ */
+; styles true 1
+; DELAY 420
+
+footer ul  {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    overflow: auto;
+}
+
+footer li , footer div  {
+    font-family: monospace, serif;
+    display: inline-flex;
+    padding: 0px 10px;
+}
+
+a:hover  {color: #888888;}
+a:visited  {color: #46c0c9;}
+a:active  {color: #5e12c2;}
+
+
+body  {
+    background-color: #544dd6;
+}
+; styles true 2
+; DELAY 420
+
+/*
+ * Not bad, right?
+ * But it feels a bit bland and empty. Doesn't it?
+ * Let me add some color. How about something IDE like?
+ * ... Maybe a lot more colourful than an IDE ...
+ */
+; styles true 1
+; DELAY 420
+; TOGGLE_PAUSE
+
+.number  {
+    color: rgb(33, 205, 79);
+}
+
+.comment  {
+    color: rgb(224, 127, 0);
+}
+.value  {
+    color: rgb(228, 64, 64);
+}
+.property  {
+    color: rgb(72, 196, 231);
+}
+.selector  {
+    color: rgb(147, 147, 251);
+}
+.media  {
+    color: rgb(255, 89, 225);
+}
+; styles true 2
+; DELAY 420
+; TOGGLE_PAUSE
+
+/*
+ * I can't imagine that you're here just for the fancy colours.
+ *
+ * You probably want to know a little more about me.
+ * About some of my work, projects and etc.
+ * Let me prep a TL;DR of my resume for you.
+ * 
+ * Oh and just in case you didn't notice...
+ * The link to a version of my resume is at the bottom left.
+ * 
+ */
+; DELAY 420
+; styles true 1
+
+
+
+ 
+
+@media only screen and (min-width:769px) {
+    #styles  {
+        transform: translateX(110%);
+    }
+    #resume  {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #resume  {
+        transform: translateX(0%);
+    }
+    #styles  {
+        transform: translatey(110%);
+        position: absolute;
+        bottom: 40;
+    }
+  
+}
+; DELAY 500
+; resume false 0
+; TOGGLE_PAUSE
+===================
+Richmond  Adu-Kyere
+===================
+Full-Stack Developer from Ghana
+Open to New opportunities
+
+===================
+Skills:
+===================
+Programming Languages: C/C++, Python, JavaScript, HTML, CSS, C#, Ruby
+Software: Visual Studio Code, Git, Pycharm
+Language: English
+General: Creative, Fast learner, Communicative, Curious
+
+===================
+Personal Projects:
+===================
+This Website- My Portfolio (JavaScript, HTML, CSS)
+October 2022 - Present
+
+Analytics Search Engine (Rails,StimulusJs,Active Jobs)
+August 2022 - Present
+
+Car bookings (React, Rails)
+June 2022 - Sept 2022
+
+Tv Shows (JavaScript)
+June 2022 - Sept 2022
+
+
+Metrics App(Air-Pollution) ()
+May 2022 - June 2022
+
+===================
+Education:
+===================
+HND Electrical Engineering
+Accra Tecnical University
+2018 - 2021
+
+
+Microverse (Bootcamp)
+2021 - 2022
+
+===================
+Interests:
+===================
+Programming
+Participated in HackerEarth Hacks 2022"
+
+Soccer
+
+Scrabbles
+
+; styles true 2
+; DELAY 420
+; TOGGLE_PAUSE
+
+#document  {
+    display: block;
+     color: rgb(31, 6, 6);
+    font-family: monospace, serif;
+    font-size: 1.2em;
+    text-decoration: none;
+ }
+ 
+#skip {
+    display: none;
+}
+
+
+
+/*
+ * I hope you enjoyed my site.
+ *
+ * Just one more thing! If you want, you can EDIT this website.
+ * You can change the colours, the text, the code, the layout.
+ * You can even break the website if you want!
+ * Simply start typing in this window.
+ *
+ * If you have any questions, comments or concerns
+ *
+ * Feel free to contact me at:
+; TOGGLE_PAUSE
+ * Email: adukyerer@gmail.com
+; TOGGLE_PAUSE
+ * 
+ * I'm always looking for new opportunities to learn and grow.
+ * 
+ * Thank you for your time and I hope you are impressed!
+ * 
+ * - Richmond Adu
+  Credits goes to zach1502 for the idea , also to Petka Antonov 
+ 
+ *Like you have Noticed from the beginning , my porfolio is right underneath this frame
+ *Please click "Go to Portfolio Main" that will appear to see it
+  
+ *The site is all yours
+ 
+ *See you on the other side
+ 
+ */
+
+ #replay,#real {
+    display: block;
+    cursor: pointer;
+ }
+
+ 
