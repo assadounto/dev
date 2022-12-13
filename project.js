@@ -7,7 +7,7 @@ export const projects = [
       name: 'Metrics App',
       description:
         "This is a Metrics app that fetches metrics data (air-pollution) of countries in the world",
-      technologies: ['html', 'css', 'react', 'github', 'Boostrap'],
+      technologies: ['React','Redux'],
       image: {
         link: 'logos/metric.png',
         alt: 'metric app picture',
@@ -56,7 +56,7 @@ export const projects = [
       year: '2022',
       description:
         "Full stack website for users to book developers for a project.",
-      technologies: ['Ruby on rails', 'css', 'React', 'html'],
+      technologies: ['Ruby on rails', 'React', 'Redux'],
       image: {
         link: 'logos/dev.png',
         alt: 'Book a Dev',
