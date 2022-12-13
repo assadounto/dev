@@ -299,8 +299,17 @@ p {
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
+ 
 }
 
+.b1 a {
+  text-decoration: none;
+
+}
+
+.b1:hover , .b1 a:hover {
+  color: wheat
+}
 .navbar {
   padding: 1rem 1.5rem;
   align-items: center;
