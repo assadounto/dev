@@ -1,14 +1,9 @@
-#port,#replay,#real{
-    display: none
-} 
 /* 
  * Hello! I'm rich
  * A software engineer.
- * I use my problem solving skills to help campanies
- * solve clients problems effectively and faster.
+ * I'm going to show you my portfolio.
  * I love to do hard and difficult things
  * I am opened to new opportunities
- * Currently, I'm opened to work remote ,contract or fultime
  * This is my portfolio, a website. that builds itself
  * Basically it shows what i can do as a programmer
  *
@@ -91,6 +86,10 @@ pre:hover  {
  */
 ; styles true 1
 ; DELAY 420
+
+#port,#replay,#real{
+    display: none
+} 
 
 footer ul  {
     list-style: none;
