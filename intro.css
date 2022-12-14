@@ -1,8 +1,6 @@
-#port,#replay,#real,#document {
+#port,#replay,#real{
     display: none
 } 
-
-
 /* 
  * Hello! I'm rich
  * A software engineer.
@@ -10,14 +8,11 @@
  * solve clients problems effectively and faster.
  * I love to do hard and difficult things
  * I am opened to new opportunities
- * 
- * 
  * Currently, I'm opened to work remote ,contract or fultime
  * This is my portfolio, a website. that builds itself
  * Basically it shows what i can do as a programmer
  *
  */
-
 ; DELAY 420
 /*
  * Oh... There's nothing here...                
@@ -63,7 +58,7 @@ pre:hover  {
 
 @media only screen and (min-width:769px) {
     pre:not(:empty)  {
-        height: 85%;
+        height: 80%;
         width: 45%;
     }
 }
@@ -73,6 +68,11 @@ pre:hover  {
         width: 95%;
         height: 40%;
         position: absolute;
+        font: 1em sans-serif;
+    }
+
+    footer ul li {
+        font-size: 12px;
     }
 }
 
@@ -97,12 +97,16 @@ footer ul  {
     width: 100%;
     display: flex;
     overflow: auto;
+    margin:0;
+    padding:5px;
+    
 }
 
 footer li , footer div  {
     font-family: monospace, serif;
     display: inline-flex;
     padding: 0px 10px;
+    color: rgb(245, 233, 233);
 }
 
 a:hover  {color: #888888;}
@@ -181,9 +185,10 @@ body  {
         transform: translateX(0%);
     }
     #styles  {
-        transform: translatey(110%);
+        transform: translateY(110%);
         position: absolute;
         bottom: 40;
+        font: 14px sans-serif;
     }
   
 }
@@ -250,9 +255,9 @@ Scrabbles
 
 #document  {
     display: block;
-     color: rgb(31, 6, 6);
+     color: white;
     font-family: monospace, serif;
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
  }
  
@@ -277,15 +282,18 @@ Scrabbles
  * Email: adukyerer@gmail.com
 ; TOGGLE_PAUSE
  * 
- * I'm always looking for new opportunities to learn and grow.
+ * I'm always looking for new opportunities 
+ * to learn and grow.
  * 
  * Thank you for your time and I hope you are impressed!
  * 
  * - Richmond Adu
   Credits goes to zach1502 for the idea , also to Petka Antonov 
  
- *Like you have Noticed from the beginning , my porfolio is right underneath this frame
- *Please click "Go to Portfolio Main" that will appear to see it
+ *Guess what?
+ *my porfolio is right underneath this frame
+ *Please click "Go to Portfolio Main" that 
+ *will appear to see it
   
  *The site is all yours
  
