@@ -24,7 +24,7 @@ export const projects = [
       year: '2022',
       description:
         "In this project we created a fully functional web app that fetches tv shows from an api TV-maze Users can also comment and like movies and shows.",
-      technologies: [ 'css', 'javascript', 'html'],
+      technologies: [ 'Css', 'Javascript', 'HTML'],
       image: {
         link: 'logos/tvmaze.png',
         alt: 'Tv maze',
@@ -50,19 +50,19 @@ export const projects = [
     },
     {
       id: 3,
-      name: 'Book A Developer',
+      name: 'Rent a Ride',
       place: 'Micoverse',
       title: 'Full-Stack App Project',
       year: '2022',
       description:
-        "Full stack website for users to book developers for a project.",
-      technologies: ['Ruby on rails', 'React', 'Redux'],
+        "A Full stack website for users to book rides. It is a two app.The frontend react which communicates with backend using APIs.It has the most amazing features like user authentication, user authorization, and admin authorization. It also has great UI and UX",
+      technologies: ['Ruby on rails', 'React', 'Redux',"JWT", 'PostgreSQL','Scss'],
       image: {
-        link: 'logos/dev.png',
-        alt: 'Book a Dev',
+        link: 'logos/Rent-a-ride.png',
+        alt: 'rent a ride',
       },
-      liveSource: 'https://github.com/assadounto/Book-a-dev',
-      sourceCode: 'https://github.com/assadounto/Book-a-dev',
+      liveSource: 'https://rent-a-ride.vercel.app/',
+      sourceCode: 'https://github.com/assadounto/rent-a-ride',
     },
   ];
 

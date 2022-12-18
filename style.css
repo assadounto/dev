@@ -7,6 +7,14 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.header {
+  position: fixed;
+  width: 100%;
+}
+.hero  {
+  padding-top: 50px;
+}
+
 body,
 h1,
 h2,
@@ -996,7 +1004,6 @@ p {
     transform: rotate(360deg);
   }
   
-
   @keyframes rotatelogo {
     to {
       transform: rotate(-3240deg);
