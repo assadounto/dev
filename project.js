@@ -74,11 +74,11 @@ export const projects = [
         "A Full stack website for users to book rides. It is a two app.The frontend react which communicates with backend using APIs.It has the most amazing features like user authentication, user authorization, and admin authorization. It also has great UI and UX",
       technologies: ['Ruby on rails', 'ElasticSearch', 'PostgreSQL'],
       image: {
-        link: 'logos/Rent-a-ride.png',
-        alt: 'rent a ride',
+        link: 'logos/search.png',
+        alt: 'search',
       },
       liveSource: 'https://rent-a-ride.vercel.app/',
-      sourceCode: 'https://github.com/assadounto/rent-a-ride',
+      sourceCode: 'https://search-engine-b8l7.onrender.com/',
     },
   ];
 
