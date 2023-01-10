@@ -71,7 +71,7 @@ export const projects = [
       title: 'Backend App Project',
       year: '2022',
       description:
-        "A Full stack website for users to book rides. It is a two app.The frontend react which communicates with backend using APIs.It has the most amazing features like user authentication, user authorization, and admin authorization. It also has great UI and UX",
+        "A real-time search engine that uses the latest technologies to run faster searches. Tracks analytics on trends and what users search for the most. Users’ data are not mixed up.",
       technologies: ['Ruby on rails', 'ElasticSearch', 'PostgreSQL'],
       image: {
         link: 'logos/search.png',
