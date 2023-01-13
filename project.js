@@ -77,8 +77,24 @@ export const projects = [
         link: 'logos/search.png',
         alt: 'search',
       },
-      liveSource: 'https://rent-a-ride.vercel.app/',
+      liveSource: 'https://github.com/assadounto/search-engine',
       sourceCode: 'https://search-engine-b8l7.onrender.com/',
+    },
+    {
+      id: 4,
+      name: 'Portfolio Admin',
+      place: 'Personal Project',
+      title: 'Backend App Project',
+      year: '2022',
+      description:
+        "This is the backend to my portfolio website. It is a form of CMS that allows me to add, edit and delete projects from my portfolio. It is built with Ruby on Rails and uses PostgreSQL as the database",
+      technologies: ['Ruby on rails', 'Active Storage', 'PostgreSQL' , "Cloudinary"],
+      image: {
+        link: 'logos/port.png',
+        alt: 'portfolio admin',
+      },
+      liveSource: 'https://github.com/assadounto/portfolio_admin',
+      sourceCode: 'https://github.com/assadounto/portfolio_admin',
     },
   ];
 
